@@ -16,3 +16,4 @@ connection.connect(function(err) {
 });
 
 module.exports = connection;
+//this entire file just tests the connection of the server and allows it to display the fact that it has connected.

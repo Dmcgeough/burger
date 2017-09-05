@@ -19,3 +19,4 @@ app.use("/",routes);
 app.listen(port, function() {
   console.log("Listening on PORT " + port);
 });
+//this file requires all of my various npm packages as well as sets them up and specifying the port that my app should use.
