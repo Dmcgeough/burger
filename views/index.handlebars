@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div class="left">
+    {{#each burgers}}
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+        {{#if devoured}}{{else}}
+        <h2>{{this.id}} {{this.burger_name}}</h2>
+        <button type="submit">Devour It!</button>
+        {{/if}}
+        </form>
+    {{/each}}
+    </div>
+
+    <div class="right">
+    {{#each burgers}}
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+        {{#if devoured}}
+        <h4>{{this.id}} {{this.burger_name}}</h4>
+        {{/if}}
+        </form>
+    {{/each}}
+    </div>
+
+    <form action="/" method="POST">
+        <input type="text" name="name"></input>
+        <button type="submit">Add burger</button>
+    </form>
+    </div>
